@@ -206,7 +206,7 @@ stm32-oled-voltage-meter/
 ## 调试记录
 
 本项目调试过程中涉及以下问题：
-
+- [OLED I2C 调试记录](Docs/oled_i2c_debug.md)
 - ADC 原始值到实际电压的换算
 - 分压电阻比例计算
 - OLED I2C 地址扫描
