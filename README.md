@@ -243,6 +243,12 @@ stm32-oled-voltage-meter/
 
 ## 项目状态
 
+## 项目运行效果
+
+OLED 实时显示 ADC 测量后的输入电压结果。
+
+![OLED voltage display](Image/oled_voltage_display.jpg)
+
 当前版本：V1.0
 
 已完成基础 ADC 电压测量和 OLED 显示，后续将继续扩展为多功能嵌入式测量小仪器。
