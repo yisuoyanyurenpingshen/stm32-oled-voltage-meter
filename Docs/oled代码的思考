@@ -10,3 +10,10 @@
 0xC8 / 0xC0：上下方向
 
 进入代码static void OLED_WriteCommand(uint8_t cmd) 在这里的static是静态的只给当前文件调用
+HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDR, data, 2, 100); 在这里的hi2c1是使用I2C 地址是OLED_ADDR 传送的数据是数组叫啥，发送几个字节，等待
+void OLED_SetCursor(uint8_t page, uint8_t x)//这里是设置在哪里写字的，高度和长度
+{
+    OLED_WriteCommand(0xB0 + page);
+    OLED_WriteCommand(0x00 + (x & 0x0F));//低四位
+    OLED_WriteCommand(0x10 + ((x >> 4) & 0x0F));//高四位
+}
