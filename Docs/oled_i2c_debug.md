@@ -1,5 +1,12 @@
 # OLED I2C 调试记录
-
+1. VCC/GND 有没有电
+2. I2C 扫描能不能扫到地址
+3. OLED_ADDR 是否正确
+4. OLED_Init 有没有调用
+5. OLED_Init 是否在 MX_I2C1_Init 后面
+6. oled.c 有没有加入 Keil 工程
+7. 0x8D + 0x14 电荷泵有没有打开
+8. 0xAF 有没有开显示
 ## 问题现象
 
 在 STM32 电压测量小程序调试过程中，OLED 一开始没有正常显示内容。
