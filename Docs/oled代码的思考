@@ -17,3 +17,4 @@ void OLED_SetCursor(uint8_t page, uint8_t x)//这里是设置在哪里写字的�
     OLED_WriteCommand(0x00 + (x & 0x0F));//低四位
     OLED_WriteCommand(0x10 + ((x >> 4) & 0x0F));//高四位
 }
+char里面有一个\0这个是隐藏的
